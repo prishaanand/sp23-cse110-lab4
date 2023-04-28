@@ -31,3 +31,12 @@
     - e. false --> Since true and 2 are of differnt types, Javascript converts them both to integers. Thus, true becomes 1. 1 does not equal 2, so it returns false. 
     - f. true --> The === operator chekcs if the types of both items are equal, without attempting to covert them. Since true is a boolean value and Boolean(2) is also a boolean value, it returns true. 
 15. The == operator checks for equality of the value itself, such as arithmetic equality. The === operator on the other hand, checks for equality of the types of each value, rather than the value itself. 
+16. See part2-question16.js file. 
+17. The resulting output will be [ 2, 4, 6 ]. This is because the command calls the modifyArray function with the first parameter (array) being [1,2,3] and the second parameter (callback) being the function doSomething. Inside the modifyArray function, the passed in array gets applied the passed in function for every element in the array (since the for loop traverses from i = 0 to the i = the length of the input array). The doSomething function multiplies the passed in integer value by 2, and since we pass in each element of the input array from the modifyArray function, we get the resulting array [1*2, 2*2, 3*2] which is [2,4,6], as seen in the output. 
+18. See part2-question18.js file. 
+19. The output of the code is: 
+1
+4
+3
+2
+20. 
